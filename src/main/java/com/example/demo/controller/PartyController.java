@@ -29,9 +29,9 @@ public class PartyController {
 		return partyServiceImpl.saveParty(party);
 	}
 	
-	@GetMapping("/parties/game/{party_id}")
-	public List<Party> listGameName(@PathVariable(name="party_id") int party_id) {
-	    return partyServiceImpl.listPartiesByGame(party_id);
+	@GetMapping("/parties/game_id/{game_id}")
+	public List<Party> listGameName(@PathVariable(name="game_id") int game_id) {
+	    return partyServiceImpl.listPartiesByGame(game_id);
 	}
 	
 	@GetMapping("/parties/{id}")

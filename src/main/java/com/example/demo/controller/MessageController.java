@@ -28,8 +28,8 @@ public class MessageController {
 	}
 	
 	
-	@GetMapping("/messages/name/{party_id}")
-	public List<Message> listMessageName(@PathVariable(name="party_id") int party_id) {
+	@GetMapping("/messages/party/{party_id}")
+	public List<Message> listMessageParty(@PathVariable(name="party_id") int party_id) {
 	    return messageServiceImpl.listMessagesByParty(party_id);
 	}
 	
