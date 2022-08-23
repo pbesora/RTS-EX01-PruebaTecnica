@@ -34,4 +34,14 @@ public class GameServiceImpl implements IGameService{
 		return iGameDAO.findByName(name);
 	}
 
+	@Override
+	public Game saveGame(Game game) {
+		return iGameDAO.save(game);
+	}
+
+	@Override
+	public Game updateGame(Game game) {
+		return iGameDAO.save(game);
+	}
+
 }
